@@ -1,9 +1,10 @@
-package com.example.rxjavatest
+package com.example.rxjavatest.view
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rxjavatest.R
 
 class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val ivImage : ImageView
@@ -20,5 +21,5 @@ class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         tvRating = itemView.findViewById(R.id.tv_movie_rating)
     }
 
-    
+
 }

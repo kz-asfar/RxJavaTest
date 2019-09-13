@@ -1,5 +1,6 @@
-package com.example.rxjavatest
+package com.example.rxjavatest.model
 
+import com.example.rxjavatest.model.MoviesPojo
 import io.reactivex.Observable
 import retrofit2.http.GET
 

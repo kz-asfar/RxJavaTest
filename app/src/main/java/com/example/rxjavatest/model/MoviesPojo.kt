@@ -1,4 +1,4 @@
-package com.example.rxjavatest
+package com.example.rxjavatest.model
 
 data class MoviesPojo(var title: String,
                       var image: String,

@@ -1,10 +1,11 @@
-package com.example.rxjavatest
+package com.example.rxjavatest.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rxjavatest.R
+import com.example.rxjavatest.model.MoviesPojo
 import com.squareup.picasso.Picasso
-import java.util.zip.Inflater
 
 class CustomAdapter : RecyclerView.Adapter<CustomViewHolder>() {
 
@@ -15,8 +16,10 @@ class CustomAdapter : RecyclerView.Adapter<CustomViewHolder>() {
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
-        return CustomViewHolder(LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_layout, parent, false))
+        return CustomViewHolder(
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.item_layout, parent, false)
+        )
     }
 
     override fun getItemCount() = movies.size
